@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c7c3d19a-4158-43d7-ad28-ca89ccdc0e40" name="Changes" comment="center recipe" />
+    <list default="true" id="c7c3d19a-4158-43d7-ad28-ca89ccdc0e40" name="Changes" comment="recipe">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -85,7 +87,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1770824759881</updated>
-      <workItem from="1770824760846" duration="23470000" />
+      <workItem from="1770824760846" duration="22534000" />
     </task>
     <task id="LOCAL-00001" summary="first upload">
       <option name="closed" value="true" />
@@ -215,47 +217,7 @@
       <option name="project" value="LOCAL" />
       <updated>1771470680897</updated>
     </task>
-    <task id="LOCAL-00017" summary="recipe">
-      <option name="closed" value="true" />
-      <created>1771518579675</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1771518579675</updated>
-    </task>
-    <task id="LOCAL-00018" summary="recipe">
-      <option name="closed" value="true" />
-      <created>1771518720642</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1771518720642</updated>
-    </task>
-    <task id="LOCAL-00019" summary="br">
-      <option name="closed" value="true" />
-      <created>1771518817368</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1771518817368</updated>
-    </task>
-    <task id="LOCAL-00020" summary="center">
-      <option name="closed" value="true" />
-      <created>1771519316138</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1771519316138</updated>
-    </task>
-    <task id="LOCAL-00021" summary="center recipe">
-      <option name="closed" value="true" />
-      <created>1771519407923</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1771519407923</updated>
-    </task>
-    <option name="localTasksCounter" value="22" />
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,9 +234,6 @@
     <MESSAGE value="bullet points" />
     <MESSAGE value="alt" />
     <MESSAGE value="recipe" />
-    <MESSAGE value="br" />
-    <MESSAGE value="center" />
-    <MESSAGE value="center recipe" />
-    <option name="LAST_COMMIT_MESSAGE" value="center recipe" />
+    <option name="LAST_COMMIT_MESSAGE" value="recipe" />
   </component>
 </project>
