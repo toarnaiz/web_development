@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c7c3d19a-4158-43d7-ad28-ca89ccdc0e40" name="Changes" comment="alt">
-      <change afterPath="$PROJECT_DIR$/Recipe/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inex.html" beforeDir="false" afterPath="$PROJECT_DIR$/inex.html" afterDir="false" />
-    </list>
+    <list default="true" id="c7c3d19a-4158-43d7-ad28-ca89ccdc0e40" name="Changes" comment="recipe" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,7 +85,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1770824759881</updated>
-      <workItem from="1770824760846" duration="19927000" />
+      <workItem from="1770824760846" duration="20237000" />
     </task>
     <task id="LOCAL-00001" summary="first upload">
       <option name="closed" value="true" />
@@ -195,7 +191,23 @@
       <option name="project" value="LOCAL" />
       <updated>1771425161290</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="alt">
+      <option name="closed" value="true" />
+      <created>1771470483149</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1771470483149</updated>
+    </task>
+    <task id="LOCAL-00015" summary="recipe">
+      <option name="closed" value="true" />
+      <created>1771470496840</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1771470496841</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,6 +223,7 @@
     <MESSAGE value="sub" />
     <MESSAGE value="bullet points" />
     <MESSAGE value="alt" />
-    <option name="LAST_COMMIT_MESSAGE" value="alt" />
+    <MESSAGE value="recipe" />
+    <option name="LAST_COMMIT_MESSAGE" value="recipe" />
   </component>
 </project>
