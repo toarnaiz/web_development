@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c7c3d19a-4158-43d7-ad28-ca89ccdc0e40" name="Changes" comment="portfolio">
+    <list default="true" id="c7c3d19a-4158-43d7-ad28-ca89ccdc0e40" name="Changes" comment="alt">
+      <change afterPath="$PROJECT_DIR$/Recipe/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inex.html" beforeDir="false" afterPath="$PROJECT_DIR$/inex.html" afterDir="false" />
     </list>
@@ -88,7 +89,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1770824759881</updated>
-      <workItem from="1770824760846" duration="15816000" />
+      <workItem from="1770824760846" duration="19927000" />
     </task>
     <task id="LOCAL-00001" summary="first upload">
       <option name="closed" value="true" />
@@ -178,7 +179,23 @@
       <option name="project" value="LOCAL" />
       <updated>1771379531003</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="bullet points">
+      <option name="closed" value="true" />
+      <created>1771425113917</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1771425113917</updated>
+    </task>
+    <task id="LOCAL-00013" summary="alt">
+      <option name="closed" value="true" />
+      <created>1771425161290</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1771425161290</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,6 +208,9 @@
     <MESSAGE value="changes" />
     <MESSAGE value="margot" />
     <MESSAGE value="portfolio" />
-    <option name="LAST_COMMIT_MESSAGE" value="portfolio" />
+    <MESSAGE value="sub" />
+    <MESSAGE value="bullet points" />
+    <MESSAGE value="alt" />
+    <option name="LAST_COMMIT_MESSAGE" value="alt" />
   </component>
 </project>
