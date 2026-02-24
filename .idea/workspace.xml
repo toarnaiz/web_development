@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c7c3d19a-4158-43d7-ad28-ca89ccdc0e40" name="Changes" comment="select and br" />
+    <list default="true" id="c7c3d19a-4158-43d7-ad28-ca89ccdc0e40" name="Changes" comment="marquee">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -223,7 +226,15 @@
       <option name="project" value="LOCAL" />
       <updated>1771520598142</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="marquee">
+      <option name="closed" value="true" />
+      <created>1771520986321</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1771520986321</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,6 +252,7 @@
     <MESSAGE value="alt" />
     <MESSAGE value="recipe" />
     <MESSAGE value="select and br" />
-    <option name="LAST_COMMIT_MESSAGE" value="select and br" />
+    <MESSAGE value="marquee" />
+    <option name="LAST_COMMIT_MESSAGE" value="marquee" />
   </component>
 </project>
