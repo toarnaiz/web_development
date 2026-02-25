@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c7c3d19a-4158-43d7-ad28-ca89ccdc0e40" name="Changes" comment="select">
+    <list default="true" id="c7c3d19a-4158-43d7-ad28-ca89ccdc0e40" name="Changes" comment="color">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inex.html" beforeDir="false" afterPath="$PROJECT_DIR$/inex.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -242,7 +243,15 @@
       <option name="project" value="LOCAL" />
       <updated>1771947845609</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="color">
+      <option name="closed" value="true" />
+      <created>1771948366572</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1771948366572</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,6 +271,7 @@
     <MESSAGE value="select and br" />
     <MESSAGE value="marquee" />
     <MESSAGE value="select" />
-    <option name="LAST_COMMIT_MESSAGE" value="select" />
+    <MESSAGE value="color" />
+    <option name="LAST_COMMIT_MESSAGE" value="color" />
   </component>
 </project>
