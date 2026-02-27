@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c7c3d19a-4158-43d7-ad28-ca89ccdc0e40" name="Changes" comment="color">
-      <change afterPath="$PROJECT_DIR$/grid/indexgrid.html" afterDir="false" />
+    <list default="true" id="c7c3d19a-4158-43d7-ad28-ca89ccdc0e40" name="Changes" comment="grid">
+      <change afterPath="$PROJECT_DIR$/grid/grid2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grid/gridmain.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grid/indexgrid.html" beforeDir="false" afterPath="$PROJECT_DIR$/grid/indexgrid.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -259,7 +261,15 @@
       <option name="project" value="LOCAL" />
       <updated>1771986771282</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="grid">
+      <option name="closed" value="true" />
+      <created>1772046809696</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1772046809696</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,6 +290,7 @@
     <MESSAGE value="marquee" />
     <MESSAGE value="select" />
     <MESSAGE value="color" />
-    <option name="LAST_COMMIT_MESSAGE" value="color" />
+    <MESSAGE value="grid" />
+    <option name="LAST_COMMIT_MESSAGE" value="grid" />
   </component>
 </project>
