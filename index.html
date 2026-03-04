@@ -6,7 +6,7 @@
 </head>
 <body style="background-color:powderblue;">
 
-<h1 style="text-align: center ;color: darkred">Hi, Im Tomas</h1>
+<h1 class="animationTitle">Hi, Im Tomas</h1>
 <p style="color:#b477ed; font-family: 'Comic Sans MS'"> This is my portfolio page</p>
 <span class="photo">NYC</span>
     <div class="photo-gallery">
@@ -18,6 +18,7 @@
         <option value="2">2</option>
         <option value="3">3</option>
         <option value="4">4</option>
+        <option value="67">67</option>
     </select>
 <a><br></a>
 <a href="inex.html">this is first<br></a>
@@ -62,5 +63,19 @@
         padding: 0.5rem 1rem;
         transition: opacity 2s ease;
     }
+
+    .animationTitle {
+        text-align: center;
+        animation: colorChange 1s infinite;
+    }
+
+    @keyframes colorChange {
+        0%   { color: darkred; }
+        25%  { color: orange; }
+        50%  { color: blue; }
+        75%  { color: purple; }
+        100% { color: green; }
+    }
+
 </style>
 </html>
