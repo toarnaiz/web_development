@@ -6,7 +6,7 @@
 </head>
 <body style="background-color:powderblue;">
 
-<h1 class="animationTitle">Hi, Im Tomas</h1>
+<h1 class="animationTitle" id="h1">Hi, Im Tomas</h1>
 <p class="biggerAnimation" > This is my portfolio page</p>
 <span class="photo">NYC</span>
     <div class="photo-gallery">
@@ -92,4 +92,26 @@
     }
 
 </style>
+
+<script>
+console.log("hello")
+
+let x = 5;
+console.log(x);
+let y = "5";
+console.log(y);
+
+x++
+console.log(x);
+x+=4
+console.log(x);
+x/=2
+console.log(x);
+
+function myAnimation() {
+    let test = document.createElement("h1");
+    console.log(test);
+    test.style.color = "red";
+}
+</script>
 </html>
