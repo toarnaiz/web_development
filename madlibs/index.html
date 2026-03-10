@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MadLibs</title>
+</head>
+<body>
+<h1 align="center">MadLibs</h1>
+
+<div id="entry">
+    <h1>test</h1>
+    <p>Adjective: <input type="text" id="A1input"></p>
+    <p>Adjective ending in ing: <input type="text" id="Aing1input" ></p>
+    <p>Name of place: <input type="text" id="place1input"></p>
+    <p>Objects: <input type="text" id="objectsinput"></p>
+    <p>Name of Person: <input type="text" id="personinput"></p>
+    <p>Name of place: <input type="text" id="place2input"></p>
+    <p>Noun: <input type="text" id="nouninput"></p>
+    <p>Adjective: <input type="text" id="A2input"></p>
+    <p>Name of place: <input type="text" id="place3input"></p>
+    <button onclick="madlibs()">Submit</button>
+</div>
+<div id=" results">
+    <h2>results</h2>
+    <p>One <span id="A1output">“adjective”</span> day a group of <span id = Aing1output>“adjective ending in ing”</span> adventurers to the far off land of <span id="place1output">“name of place”</span>. They had to be well prepared for the adventure that awaited them so they packed 100 <span id="objectsoutput">“Objects”</span>, once they were prepared they set off on their travels. On the way they encountered <span id="personoutput">“Name of Person”</span> once they finally made it to the sacred shrine of <span id ="place2output">“name of place”</span>, they walked through it and found a chest containing a <span id="nounoutput">“noun”</span>. They were happy with their discovery and returned to their <span id="A2output">“adjective ending in ing”</span> home in <span id="place3output">“name of place”</span>.
+    </p>
+</div>
+</body>
+
+<script>
+    function madlibs(){
+
+        let A1input = document.getElementById("A1input");
+        document.getElementById("A1output").innerHTML = A1input.value;
+
+        let Aing1input = document.getElementById("Aing1input");
+        document.getElementById("Aing1output").innerHTML = Aing1input.value;
+
+        let place1input = document.getElementById("place1input");
+        document.getElementById("place1output").innerHTML = place1input.value;
+
+        let objectsinput = document.getElementById("objectsinput");
+        document.getElementById("objectsoutput").innerHTML = objectsinput.value;
+
+        let personinput = document.getElementById("personinput");
+        document.getElementById("personoutput").innerHTML = personinput.value;
+
+        let place2input = document.getElementById("place2input");
+        document.getElementById("place2output").innerHTML = place2input.value;
+
+        let nouninput = document.getElementById("nouninput");
+        document.getElementById("nounoutput").innerHTML = nouninput.value;
+
+        let A2input = document.getElementById("A2input");
+        document.getElementById("A2output").innerHTML = A2input.value;
+
+
+        let place3input = document.getElementById("place3input");
+        document.getElementById("place3output").innerHTML = place3input.value;
+
+    }
+</script>
+
+</html>

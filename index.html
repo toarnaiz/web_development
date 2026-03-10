@@ -6,7 +6,7 @@
 </head>
 <body style="background-color:powderblue;">
 
-<h1 class="animationTitle" id="h1">Hi, Im Tomas</h1>
+<h1 class="animationTitle" id="header" onclick="changeHeader()">Hi, Im Tomas</h1>
 <p class="biggerAnimation" > This is my portfolio page</p>
 <span class="photo">NYC</span>
     <div class="photo-gallery">
@@ -24,6 +24,7 @@
 <a href="inex.html">this is first<br></a>
 <a href="Recipe/index.html">this is second</a>
 <a href="grid/gridmain.html">this is third</a>
+<a href="madlibs/gridmain.html">this is third</a>
 </body>
 
 <style>
@@ -108,10 +109,12 @@ console.log(x);
 x/=2
 console.log(x);
 
-function myAnimation() {
-    let test = document.createElement("h1");
+function changeHeader() {
+    let test = document.getElementById("header");
     console.log(test);
+    test.innerText= "this is new"
     test.style.color = "red";
 }
+
 </script>
 </html>
