@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <title>MadLibs</title>
 </head>
+<style>
+    #results {
+        display: none;
+    }
+</style>
 <body>
 <h1 align="center">MadLibs</h1>
 
 <div id="entry">
-    <h1>test</h1>
+    <h1>Insert</h1>
     <p>Adjective: <input type="text" id="A1input"></p>
     <p>Adjective ending in ing: <input type="text" id="Aing1input" ></p>
     <p>Name of place: <input type="text" id="place1input"></p>
@@ -20,12 +25,19 @@
     <p>Name of place: <input type="text" id="place3input"></p>
     <button onclick="madlibs()">Submit</button>
 </div>
-<div id=" results">
-    <h2>results</h2>
-    <p>One <span id="A1output">“adjective”</span> day a group of <span id = Aing1output>“adjective ending in ing”</span> adventurers to the far off land of <span id="place1output">“name of place”</span>. They had to be well prepared for the adventure that awaited them so they packed 100 <span id="objectsoutput">“Objects”</span>, once they were prepared they set off on their travels. On the way they encountered <span id="personoutput">“Name of Person”</span> once they finally made it to the sacred shrine of <span id ="place2output">“name of place”</span>, they walked through it and found a chest containing a <span id="nounoutput">“noun”</span>. They were happy with their discovery and returned to their <span id="A2output">“adjective ending in ing”</span> home in <span id="place3output">“name of place”</span>.
+<div id="results">
+
+    <h2>Results:</h2>
+    <p>One <span id="A1output" class="outputs">“adjective”</span> day a group of <span id = Aing1output class="outputs">“adjective ending in ing”</span> adventurers to the far off land of <span id="place1output" class="outputs" >“name of place”</span>. They had to be well prepared for the adventure that awaited them so they packed 100 <span id="objectsoutput" class="outputs" >“Objects”</span>, once they were prepared they set off on their travels. On the way they encountered <span id="personoutput" class="outputs">“Name of Person”</span> once they finally made it to the sacred shrine of <span id ="place2output" class="outputs">“name of place”</span>, they walked through it and found a chest containing a <span id="nounoutput" class="outputs">“noun”</span>. They were happy with their discovery and returned to their <span id="A2output" class="outputs">“adjective ending in ing”</span> home in <span id="place3output" class="outputs">“name of place”</span>.
     </p>
+
 </div>
 </body>
+<style>
+    span.outputs{
+        color: #9f56e4;
+    }
+</style>
 
 <script>
     function madlibs(){
@@ -57,6 +69,22 @@
 
         let place3input = document.getElementById("place3input");
         document.getElementById("place3output").innerHTML = place3input.value;
+
+
+        if(
+            A1input.value != "" &&
+            Aing1input.value != "" &&
+            place1input.value != "" &&
+            objectsinput.value != "" &&
+            personinput.value != "" &&
+            place2input.value != "" &&
+            nouninput.value != "" &&
+            A2input.value != "" &&
+            place3input.value != ""
+        ) {
+            document.getElementById("results").style.display = "block";
+            document.getElementById("entry").style.display = "none";
+        }
 
     }
 </script>

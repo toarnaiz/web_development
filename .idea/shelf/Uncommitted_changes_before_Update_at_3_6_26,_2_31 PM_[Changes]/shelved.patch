@@ -1,0 +1,24 @@
+Index: index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <title>Title</title>\n</head>\n<body style=\"background-color:powderblue;\">\n\n<h1 class=\"animationTitle\" id=\"h1\">Hi, Im Tomas</h1>\n<p class=\"biggerAnimation\" > This is my portfolio page</p>\n<span class=\"photo\">NYC</span>\n    <div class=\"photo-gallery\">\n        <img src=\"https://azure-na-images.contentstack.com/v3/assets/blt738d1897c3c93fa6/bltfa5d0fb785639f6f/685040c8f7cdb0fdfa0e6392/MG_1_1_New_York_City_1.webp\" alt=\"Photo of me\" width = \"100\" height=\"100\">\n    </div>\n    <label for=\"number\">Choose a number:</label>\n    <select name=\"number\" id=\"number\">\n        <option value=\"1\">1</option>\n        <option value=\"2\">2</option>\n        <option value=\"3\">3</option>\n        <option value=\"4\">4</option>\n        <option value=\"67\">67</option>\n    </select>\n<a><br></a>\n<a href=\"inex.html\">this is first<br></a>\n<a href=\"Recipe/index.html\">this is second</a>\n<a href=\"grid/gridmain.html\">this is third</a>\n</body>\n\n<style>\n    div {\n\n        width: 200px;\n        height: 200px;\n        background-color: red;\n        animation-name: myAnimation;\n        animation-duration: 4s;\n    }\n\n    @keyframes myAnimation {\n        0%   {background-color: red;}\n        25%  {background-color: yellow;}\n        50%  {background-color: blue;}\n        100% {background-color: green;}\n    }\n\n    .photo-gallery {\n        display:none;\n        margin-top: 10px;\n    }\n    .photo{\n        color: white;\n        cursor: pointer;\n        font-weight: bold;\n        position: relative;\n        display: inline;\n    }\n\n    .photo:hover + .photo-gallery{\n        position:relative;\n        display: block;\n        width: 100%;\n        height: 100%;\n        padding: 0.5rem 1rem;\n        transition: opacity 2s ease;\n    }\n\n    .animationTitle {\n        text-align: center;\n        animation: colorAnimation 10s infinite;\n    }\n\n    @keyframes colorAnimation {\n        0%   { color: darkred; }\n        25%  { color: orange; }\n        50%  { color: blue; }\n        75%  { color: purple; }\n        100% { color: green; }\n    }\n    .biggerAnimation{\n        color:#b477ed;\n        font-family: 'Comic Sans MS';\n        animation: growsize 3s infinite alternate;\n    }\n\n    @keyframes growsize {\n        from {\n            font-size: 16px;\n        }\n        to {\n            font-size: 25px;\n        }\n    }\n\n</style>\n\n<script>\nconsole.log(\"hello\")\n\nlet x = 5;\nconsole.log(x);\nlet y = \"5\";\nconsole.log(y);\n\nx++\nconsole.log(x);\nx+=4\nconsole.log(x);\nx/=2\nconsole.log(x);\n\nfunction myAnimation() {\n    let test = document.createElement(\"h1\");\n    console.log(test);\n    test.style.color = \"red\";\n}\n</script>\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/index.html b/index.html
+--- a/index.html	(revision 2cc58e62de753df582e7ee42ef09f8c37f7f4f53)
++++ b/index.html	(date 1772825486897)
+@@ -108,10 +108,11 @@
+ x/=2
+ console.log(x);
+ 
+-function myAnimation() {
++function changeh1() {
+     let test = document.createElement("h1");
+     console.log(test);
+     test.style.color = "red";
+ }
++c
+ </script>
+ </html>
+\ No newline at end of file
