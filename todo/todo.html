@@ -5,7 +5,7 @@
   <title>To Do</title>
 </head>
 <body>
-<h1>Tomas' To-Do List</h1>
+<h1>Tomas To-Do List</h1>
 <h2>Add a task</h2>
 <label for="task">Task Name: </label><input id="task" type="text" placeholder="task name...">
 <button id="add" onclick="new_task()">Add</button>
@@ -21,7 +21,7 @@
 <style>
   body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #6a915d;
+    background-color: #7dbcd3;
     margin: 25px;
   }
 
@@ -62,6 +62,7 @@
     let expires = "expires="+ d.toUTCString();
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
   }
+
   function getCookie(cname) {
     let name = cname + "=";
     let decodedCookie = decodeURIComponent(document.cookie);
@@ -78,21 +79,23 @@
     return "";
   }
 
+
+
   function new_task() {
     let task_input = document.getElementById('task');
     let task_name = task_input.value;
     if (task_name == "") {
       return false;
     }
-
-
     console.log(task_name);
     setCookie("task", getCookie("task") + "|" + task_name, 15);
     add_task(task_name);
+
+    task_input.value = "";
+    task_input.focus();
   }
+
   function add_task(task_name) {
-
-
     let new_div = document.createElement("div");
     new_div.className = "task";
     document.getElementById("task_list").appendChild(new_div);
@@ -108,27 +111,40 @@
 
     let trash = document.createElement("span");
     trash.className = "trash";
-    trash.innerText = "🗑️";
+    trash.innerText = "X";
     trash.style.float = "right";
     trash.addEventListener("click", delete_task)
     new_div.appendChild(trash);
 
-    task_input.value = "";
-    task_input.focus();
   }
 
   function delete_task(e){
-    e.target.parentElement.remove();
+    e.target.parentElement.remove()
   }
 
+
   let current_cookie = getCookie("task");
-  current_cookie = current_cookie.split('|');
+  console.log(current_cookie);
+  current_cookie = current_cookie.split("|")
   console.log(current_cookie);
   // console.log(current_cookie.length);
-  // console.log(current_cookie[9])
-  // current_cookie[9] = current_cookie[9].toUpperCase();
-  for(let i = 0; i <  current_cookie.length; i = i +1) {
-    new_task(current_cookie[i]);
+  // console.log(current_cookie[1]);
+  // current_cookie[1] = current_cookie[1].toUpperCase();
+  // console.log(current_cookie[1]);
+  // console.log(current_cookie);
+
+  // console.log(current_cookie[0]);
+  // console.log(current_cookie[1]);
+  // console.log(current_cookie[2]);
+  // console.log(current_cookie[3]);
+  // console.log(current_cookie[4]);
+  // console.log(current_cookie[5]);
+
+  for(let i = 0; i < current_cookie.length; i = i + 1){
+    console.log(current_cookie[i]);
+    add_task(current_cookie[i]);
   }
+
+
 </script>
 </html>
