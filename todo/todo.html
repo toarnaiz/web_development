@@ -119,5 +119,15 @@
   function delete_task(e){
     e.target.parentElement.remove();
   }
+
+  let current_cookie = getCookie("task");
+  current_cookie = current_cookie.split('|');
+  console.log(current_cookie);
+  // console.log(current_cookie.length);
+  // console.log(current_cookie[9])
+  // current_cookie[9] = current_cookie[9].toUpperCase();
+  for(let i = 0; i <  current_cookie.length; i = i +1) {
+    new_task(current_cookie[i]);
+  }
 </script>
 </html>
