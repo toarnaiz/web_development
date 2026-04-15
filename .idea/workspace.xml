@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c7c3d19a-4158-43d7-ad28-ca89ccdc0e40" name="Changes" comment="cookies">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo/todo.html" beforeDir="false" afterPath="$PROJECT_DIR$/todo/todo.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +94,7 @@
       <option name="presentableId" value="Default" />
       <updated>1770824759881</updated>
       <workItem from="1770824760846" duration="22534000" />
-      <workItem from="1775489434129" duration="15534000" />
+      <workItem from="1775489434129" duration="16239000" />
     </task>
     <task id="LOCAL-00001" summary="first upload">
       <option name="closed" value="true" />
@@ -361,7 +360,15 @@
       <option name="project" value="LOCAL" />
       <updated>1776037334622</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="cookies">
+      <option name="closed" value="true" />
+      <created>1776258155507</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1776258155507</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
