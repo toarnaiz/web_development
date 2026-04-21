@@ -4,18 +4,21 @@
   <meta charset="UTF-8">
   <title>To Do</title>
 </head>
+
 <body>
 <h1>Tomas To-Do List</h1>
+
+<h2>Add a Category</h2>
+<input id="category" type="text" placeholder="category name...">
+<button onclick="add_category()">Add Category</button>
+
 <h2>Add a task</h2>
-<label for="task">Task Name: </label><input id="task" type="text" placeholder="task name...">
-<button id="add" onclick="new_task()">Add</button>
+<input id="task" type="text" placeholder="task name...">
+<button onclick="new_task()">Add task</button>
 
 <h2>Tasks</h2>
-<div id="task_list">
-  <!--    </span><div class="task"><input type="checkbox"><span class="task_name">Task 1</span></div>-->
-  <!--    </span><div class="task"><input type="checkbox"><span class="task_name">Task 2</span></div>-->
-  <!--    </span><div class="task"><input type="checkbox"><span class="task_name">Task 3</span></div>-->
-</div>
+<div id="task_list"></div>
+
 </body>
 
 <style>
@@ -23,6 +26,15 @@
     font-family: Arial, Helvetica, sans-serif;
     background-color: #7dbcd3;
     margin: 25px;
+  }
+
+  .category {
+    margin-bottom: 20px;
+  }
+
+  .category h3 {
+    margin-left: 10px;
+    cursor: pointer;
   }
 
   div.task > input {
@@ -56,6 +68,8 @@
 </style>
 
 <script>
+  let selected_category = null;
+
   function setCookie(cname, cvalue, exdays) {
     const d = new Date();
     d.setTime(d.getTime() + (exdays*24*60*60*1000));
@@ -79,33 +93,63 @@
     return "";
   }
 
+  function add_category() {
+    let input = document.getElementById("category");
+    let name = input.value;
 
+    if (name == "") return;
+
+    let category_div = document.createElement("div");
+    category_div.className = "category";
+
+    let title = document.createElement("h3");
+    title.innerText = name;
+
+    // click to select category
+    title.onclick = function() {
+      selected_category = category_div;
+    };
+
+    category_div.appendChild(title);
+
+    let task_container = document.createElement("div");
+    category_div.appendChild(task_container);
+
+    document.getElementById("task_list").appendChild(category_div);
+
+    input.value = "";
+  }
 
   function new_task() {
     let task_input = document.getElementById('task');
     let task_name = task_input.value;
-    if (task_name == "") {
-      return false;
+
+    if (task_name == "") return;
+
+    if (selected_category == null) {
+      alert("click a category first");
+      return;
     }
-    console.log(task_name);
-    setCookie("task", getCookie("task") + "|" + task_name, 15);
-    add_task(task_name);
+
+    let task_container = selected_category.children[1];
+
+    add_task(task_name, task_container);
 
     task_input.value = "";
     task_input.focus();
   }
 
-  function add_task(task_name) {
+  function add_task(task_name, container) {
     let new_div = document.createElement("div");
     new_div.className = "task";
-    document.getElementById("task_list").appendChild(new_div);
+    container.appendChild(new_div);
 
     let checkbox = document.createElement("input");
     checkbox.type = "checkbox";
     new_div.appendChild(checkbox);
 
     let new_span = document.createElement("span");
-    new_span.setAttribute("class", "task_name");
+    new_span.className = "task_name";
     new_span.innerText = task_name;
     new_div.appendChild(new_span);
 
@@ -113,38 +157,13 @@
     trash.className = "trash";
     trash.innerText = "X";
     trash.style.float = "right";
-    trash.addEventListener("click", delete_task)
+    trash.addEventListener("click", delete_task);
     new_div.appendChild(trash);
-
   }
 
   function delete_task(e){
     e.target.parentElement.remove()
   }
-
-
-  let current_cookie = getCookie("task");
-  console.log(current_cookie);
-  current_cookie = current_cookie.split("|")
-  console.log(current_cookie);
-  // console.log(current_cookie.length);
-  // console.log(current_cookie[1]);
-  // current_cookie[1] = current_cookie[1].toUpperCase();
-  // console.log(current_cookie[1]);
-  // console.log(current_cookie);
-
-  // console.log(current_cookie[0]);
-  // console.log(current_cookie[1]);
-  // console.log(current_cookie[2]);
-  // console.log(current_cookie[3]);
-  // console.log(current_cookie[4]);
-  // console.log(current_cookie[5]);
-
-  for(let i = 0; i < current_cookie.length; i = i + 1){
-    console.log(current_cookie[i]);
-    add_task(current_cookie[i]);
-  }
-
-
 </script>
+
 </html>
