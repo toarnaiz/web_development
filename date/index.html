@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Date</title>
+</head>
+<body>
+<h1>Days until birthday</h1>
+
+<p id="output"></p>
+
+<script>
+    let now = new Date();
+    let then = new Date("November, 01, 2026 12:00:00");
+
+    let diff = then - now;
+
+    let days = (diff / 1000 / 60 / 60 / 24);
+
+    document.getElementById("output").innerHTML = days;
+</script>
+
+</body>
+</html>
