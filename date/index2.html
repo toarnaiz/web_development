@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Date</title>
+</head>
+<body>
+
+<p>Enter your birthday:</p>
+<input type="date" id="vote">
+
+<p>
+    You can vote in:
+    <span id="weeks"></span> weeks,
+    <span id="days"></span> days,
+    <span id="hours"></span> hours,
+    <span id="minutes"></span> minutes,
+    <span id="seconds"></span> seconds
+</p>
+
+<script>
+    function count() {
+        let input = document.getElementById('vote').value;
+
+
+        if (!input) return;
+
+        let now = new Date();
+
+        let birthday = new Date(input);
+
+        let voteDate = new Date(birthday);
+        voteDate.setFullYear(birthday.getFullYear() + 18);
+
+        let diff = voteDate - now;
+
+        if (diff < 0) {
+            document.getElementById("weeks").innerHTML = 0;
+            document.getElementById("days").innerHTML = 0;
+            document.getElementById("hours").innerHTML = 0;
+            document.getElementById("minutes").innerHTML = 0;
+            document.getElementById("seconds").innerHTML = 0;
+            return;
+        }
+
+        let weeks = Math.floor(diff / (1000 * 60 * 60 * 24 * 7));
+        let days = Math.floor(diff / (1000 * 60 * 60 * 24)) % 7;
+        let hours = Math.floor(diff / (1000 * 60 * 60)) % 24;
+        let minutes = Math.floor(diff / (1000 * 60)) % 60;
+        let seconds = Math.floor(diff / 1000) % 60;
+
+        document.getElementById("weeks").innerHTML = weeks;
+        document.getElementById("days").innerHTML = days;
+        document.getElementById("hours").innerHTML = hours;
+        document.getElementById("minutes").innerHTML = minutes;
+        document.getElementById("seconds").innerHTML = seconds;
+    }
+
+    // Update every half second
+    setInterval(count, 500);
+</script>
+
+</body>
+</html>
