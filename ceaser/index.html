@@ -33,7 +33,7 @@
 
         for(let i=0; i<plaintext.length;i++){
             let charLocation = chars.indexOf(plaintext[i]);
-            let newCharLocation = charLocation * key;
+            let newCharLocation = charLocation * key ;
             let newChar = chars[newCharLocation];
             console.log(plaintext[i],charLocation,newCharLocation,  );
             ciphertext = ciphertext + newCharLocation + " ";
