@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NBA Teams</title>
+</head>
+<body>
+
+<h1>NBA Team Stats</h1>
+
+<select id="teams">
+    <option value="1">Atlanta Hawks</option>
+    <option value="2">Boston Celtics</option>
+    <option value="3">Brooklyn Nets</option>
+    <option value="4">Charlotte Hornets</option>
+    <option value="5">Chicago Bulls</option>
+    <option value="6">Cleveland Cavaliers</option>
+    <option value="7">Dallas Mavericks</option>
+    <option value="8">Denver Nuggets</option>
+    <option value="9">Detroit Pistons</option>
+    <option value="10">Golden State Warriors</option>
+</select>
+
+<button onclick="getStats()">Get Stats</button>
+
+<p>Team: <span id="team"></span></p>
+<p>Conference: <span id="conference"></span></p>
+<p>Division: <span id="division"></span></p>
+<p>City: <span id="city"></span></p>
+
+<script>
+
+    function getStats() {
+
+        let teamId = document.getElementById("teams").value;
+
+        let url = "https://www.balldontlie.io/api/v1/teams/" + teamId;
+
+        fetch(url)
+
+            .then(function(response) {
+
+                if (!response.ok) throw new Error("Network response was not ok");
+
+                return response.json();
+
+            })
+
+            .then(function(data) {
+
+                console.log(data);
+
+                document.getElementById("team").innerHTML =
+                    data.full_name;
+
+                document.getElementById("conference").innerHTML =
+                    data.conference;
+
+                document.getElementById("division").innerHTML =
+                    data.division;
+
+                document.getElementById("city").innerHTML =
+                    data.city;
+
+            })
+
+            .catch(function(error) {
+
+                console.error("Fetch error:", error);
+
+            });
+
+    }
+
+</script>
+
+</body>
+</html>
