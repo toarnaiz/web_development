@@ -42,10 +42,10 @@
 
                 console.log(data);
 
-                document.getElementById("Position").innerText = data.position;
+                document.getElementById("Position").innerText = data.data[0].position;
 
-                document.getElementById("Height").innerText = data.height;
-                document.getElementById("Weight").innerText = data.weight;
+                document.getElementById("Height").innerText = data.data[0].height;
+                document.getElementById("Weight").innerText = data.data[0].weight;
 
 
 
